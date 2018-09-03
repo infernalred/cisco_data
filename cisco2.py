@@ -21,7 +21,7 @@ data = stdout.readlines()
 for ll in data:
     line = ll.strip(", ")
     p = line.split(", ")
-    file = open(a, "w")
+    file = open(a, "a")
     file.writelines(p)
     file.close()
     client.close()
